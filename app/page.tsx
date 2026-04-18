@@ -20,12 +20,12 @@ export default function Home() {
                 key={i}
                 className="absolute w-2 h-2 bg-[#f79d02]/40 rounded-full"
                 initial={{
-                  x: Math.random() * window.innerWidth,
-                  y: Math.random() * window.innerHeight,
+                  x: Math.random() * 1920, // Use typical desktop width
+                  y: Math.random() * 1080, // Use typical desktop height
                   scale: 0
                 }}
                 animate={{
-                  y: [null, -100, window.innerHeight],
+                  y: [null, -100, 1080], // Use typical desktop height
                   scale: [0, 1, 0]
                 }}
                 transition={{

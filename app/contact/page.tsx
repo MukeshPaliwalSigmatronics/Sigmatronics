@@ -19,7 +19,9 @@ export default function Contact() {
     const subject = `Contact from ${formData.name} - ${formData.subject}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nPhone: ${formData.phone}\nSubject: ${formData.subject}\n\nMessage:\n${formData.message}`;
     const mailtoLink = `mailto:info@sigmatronics.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    if (typeof window !== 'undefined') {
+      window.location.href = mailtoLink;
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
