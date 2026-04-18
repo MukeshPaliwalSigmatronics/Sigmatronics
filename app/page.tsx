@@ -277,208 +277,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Hardware Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gradient-to-r from-[#0a3576] to-[#0b3d91]">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-6">Sigmatronics Hardware</h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            From our inception, we've specialized in hardware solutions, designing everything from vending machines to advanced IoT gateways.
-          </p>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <h3 className="text-2xl font-semibold text-white mb-4">Our Hardware Portfolio</h3>
-            <ul className="space-y-2 text-white">
-              <li>• Vending Hardware</li>
-              <li>• Water Solution Hardware</li>
-              <li>• Solar Hardware (Inverters, Charge Controllers)</li>
-              <li>• Automation Hardware</li>
-              <li>• Dispensing Solution Hardware</li>
-              <li>• Incinerator Hardware</li>
-              <li>• Industrial Electrical Automation Hardware</li>
-              <li>• Industrial IoT Automation Hardware</li>
-              <li>• Home Automation Hardware</li>
-              <li>And many more innovative designs</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-white mb-4">Proprietary IoT Gateways</h3>
-            <p className="text-white mb-4">
-              Our proprietary 2G/4G/Wi-Fi communication gateways are designed for all-purpose IoT solutions.
-            </p>
-            <h4 className="text-xl font-semibold text-white mb-2">Features:</h4>
-            <ul className="space-y-2 text-white">
-              <li>• Multi-protocol support (MQTT, HTTP, CoAP)</li>
-              <li>• Secure data transmission</li>
-              <li>• Low power consumption</li>
-              <li>• Remote configuration and monitoring</li>
-              <li>• Edge computing capabilities</li>
-            </ul>
-            <h4 className="text-xl font-semibold text-white mb-2 mt-4">Use Cases:</h4>
-            <ul className="space-y-2 text-white">
-              <li>• Smart agriculture for real-time crop monitoring</li>
-              <li>• Industrial automation for predictive maintenance</li>
-              <li>• Home automation for energy management</li>
-              <li>• Environmental monitoring networks</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h3 className="text-2xl font-semibold text-white mb-4">Innovative IoT Hardware Capabilities</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-[#0b3d91] to-[#0a3576] p-4 rounded-lg shadow-lg border border-[#f79d02]/20 hover:border-[#f79d02]/50 transition-all duration-300">
-              <h4 className="text-lg font-semibold text-white mb-2">AI-Powered Sensors</h4>
-              <p className="text-slate-300">Intelligent sensors with onboard AI for real-time data processing and anomaly detection.</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#0b3d91] to-[#0a3576] p-4 rounded-lg shadow-lg border border-[#f79d02]/20 hover:border-[#f79d02]/50 transition-all duration-300">
-              <h4 className="text-lg font-semibold text-white mb-2">5G-Enabled Devices</h4>
-              <p className="text-slate-300">Next-generation IoT devices leveraging 5G for ultra-low latency and high-speed connectivity.</p>
-            </div>
-            <div className="bg-gradient-to-br from-[#0b3d91] to-[#0a3576] p-4 rounded-lg shadow-lg border border-[#f79d02]/20 hover:border-[#f79d02]/50 transition-all duration-300">
-              <h4 className="text-lg font-semibold text-white mb-2">Energy Harvesting Modules</h4>
-              <p className="text-gray-400">Self-powered IoT devices using solar, kinetic, or thermal energy harvesting technologies.</p>
-            </div>
-          </div>
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link
-            href="/products"
-            className="bg-[#0b3d91] hover:bg-[#f79d02] text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center shadow-lg hover:shadow-xl"
-          >
-            View All Hardware <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </motion.div>
-      </section>
-
-      {/* Software Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gradient-to-r from-[#0b3d91] to-[#0a3576]">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-6">Sigmatronics Software</h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Our software vertical delivers custom software solutions, websites, and IoT-enabled platforms.
-          </p>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-            {
-              name: 'VendMonitor.com',
-              desc: 'Comprehensive vending machine monitoring and management platform with real-time analytics.'
-            },
-            {
-              name: 'NodeQue.com',
-              desc: 'IoT node management and queuing system for efficient device communication.'
-            },
-            {
-              name: 'MetaPlugs.com',
-              desc: 'Modular IoT platform for integrating various smart devices and sensors.'
-            },
-            {
-              name: 'JivanSecure.com',
-              desc: 'Security-focused platform for IoT device authentication and data protection.'
-            }
-          ].map((platform, index) => (
-            <motion.div
-              key={platform.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-[#0a3576]/50  p-6 rounded-xl border border-gray-700"
-            >
-              <h3 className="text-xl font-semibold text-white mb-2">{platform.name}</h3>
-              <p className="text-gray-400">{platform.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link
-            href="/services"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center"
-          >
-            Explore Software Solutions <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </motion.div>
-      </section>
-
-      {/* Solutions Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#0a3576]/30">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-6">Sigmatronics Solutions</h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Integrated hardware-software solutions and future prospects across various domains.
-          </p>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-semibold text-white mb-4">Designed Solutions</h3>
-            <ul className="space-y-2 text-white">
-              <li>• Smart Vending Systems (Hardware + Software)</li>
-              <li>• IoT-Based Water Management Solutions</li>
-              <li>• Solar Power Monitoring and Control Systems</li>
-              <li>• Industrial Automation Platforms</li>
-              <li>• Home Energy Management Systems</li>
-              <li>• Environmental Monitoring Networks</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-white mb-4">Future Prospects</h3>
-            <ul className="space-y-2 text-white">
-              <li>• AI-Driven Predictive Maintenance</li>
-              <li>• Blockchain-Enabled IoT Security</li>
-              <li>• 6G-Ready Smart Infrastructure</li>
-              <li>• Quantum Computing Integration</li>
-              <li>• Autonomous Robotic Systems</li>
-              <li>• Sustainable Energy Solutions</li>
-            </ul>
-          </div>
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link
-            href="/solutions"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center"
-          >
-            View All Solutions <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </motion.div>
-      </section>
-
-      {/* Consultancy Section */}
+      {/* Capabilities Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -487,29 +286,106 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-6">Sigmatronics Consultancy</h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Expert consultancy services partnering with tech firms to deliver comprehensive solutions.
-          </p>
+          <p className="text-sm uppercase tracking-[0.3em] text-amber-300">What We Build</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-white">Modern cards, premium motion, polished systems.</h2>
+          <p className="mt-4 text-slate-400 max-w-2xl mx-auto">We simplify complexity with elegant hardware, scalable software, and connected IoT experiences that feel modern and memorable.</p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-white mb-4">Website Consultancy & Development</h3>
-            <p className="text-gray-400">Custom website design, development, and optimization services.</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-white mb-4">Hardware Consultancy & Development</h3>
-            <p className="text-gray-400">Expert guidance on hardware design, prototyping, and manufacturing.</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-white mb-4">Software Consultancy & Development</h3>
-            <p className="text-gray-400">Full-stack software development and system architecture consulting.</p>
-          </div>
+
+        <div className="grid gap-6 xl:grid-cols-3">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="group rounded-4xl border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20 transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-linear-to-br from-amber-400 to-orange-500 text-white mb-6">
+              <Cpu className="h-6 w-6" />
+            </div>
+            <h3 className="text-2xl font-semibold text-white mb-4">Hardware Studio</h3>
+            <p className="text-slate-400 leading-7">Industrial-grade hardware design with refined enclosures and connected electronics.</p>
+            <ul className="mt-6 space-y-3 text-slate-300">
+              <li>• Embedded systems engineering</li>
+              <li>• Sensor & gateway design</li>
+              <li>• Production-ready prototypes</li>
+            </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.08 }}
+            viewport={{ once: true }}
+            className="group rounded-4xl border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20 transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-linear-to-br from-cyan-400 to-indigo-500 text-white mb-6">
+              <Code className="h-6 w-6" />
+            </div>
+            <h3 className="text-2xl font-semibold text-white mb-4">Software Platforms</h3>
+            <p className="text-slate-400 leading-7">Intuitive applications, dashboards, and connected services designed for polished workflows.</p>
+            <ul className="mt-6 space-y-3 text-slate-300">
+              <li>• User-centric web apps</li>
+              <li>• Cloud & API ecosystems</li>
+              <li>• Data visualization</li>
+            </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.16 }}
+            viewport={{ once: true }}
+            className="group rounded-4xl border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20 transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-linear-to-br from-emerald-400 to-teal-500 text-white mb-6">
+              <Zap className="h-6 w-6" />
+            </div>
+            <h3 className="text-2xl font-semibold text-white mb-4">Connected IoT</h3>
+            <p className="text-slate-400 leading-7">Smart systems, real-time telemetry, and secure connectivity for modern devices.</p>
+            <ul className="mt-6 space-y-3 text-slate-300">
+              <li>• Gateway solutions</li>
+              <li>• Sensor networks</li>
+              <li>• Live analytics</li>
+            </ul>
+          </motion.div>
+        </div>
+
+        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+          {[
+            {
+              title: 'Consulting & Strategy',
+              desc: 'Turn your idea into a strong product roadmap with tech-first advisory.',
+              icon: Users
+            },
+            {
+              title: 'Premium Launch Support',
+              desc: 'Manufacturing, deployment, and product support that keeps deliveries smooth.',
+              icon: Award
+            },
+            {
+              title: 'Global Reach',
+              desc: 'Products designed for scalability, security, and multi-market growth.',
+              icon: Globe
+            }
+          ].map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.08 }}
+              viewport={{ once: true }}
+              className="group rounded-3xl border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20 transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-slate-800 text-amber-300 mb-4">
+                <item.icon className="h-5 w-5" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{item.title}</h3>
+              <p className="text-slate-400 leading-7">{item.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* Learnings Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#0a3576]/30">
+      {/* Software Highlights */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-slate-950/75 rounded-[40px] border border-white/10 shadow-2xl shadow-black/20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -517,36 +393,204 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold font-heading text-white mb-6">Sigmatronics Learnings</h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Empowering the next generation of innovators through comprehensive tech education and hands-on experience.
-          </p>
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">Software & Platforms</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-white">Build smarter digital experiences.</h2>
+          <p className="mt-4 text-slate-400 max-w-2xl mx-auto">Custom software, secure platforms, and product ecosystems designed to keep users engaged and operations efficient.</p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              name: 'VendMonitor.com',
+              desc: 'Vending operations analytics and remote management for every device.'
+            },
+            {
+              name: 'NodeQue.com',
+              desc: 'IoT node orchestration and event-driven coordination in one platform.'
+            },
+            {
+              name: 'MetaPlugs.com',
+              desc: 'Modular integration layer for connected devices and automation workflows.'
+            },
+            {
+              name: 'JivanSecure.com',
+              desc: 'Secure device authentication and protection for connected systems.'
+            }
+          ].map((platform, index) => (
+            <motion.div
+              key={platform.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.08 }}
+              viewport={{ once: true }}
+              className="rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-lg shadow-black/20 hover:border-cyan-400/30 transition"
+            >
+              <h3 className="text-xl font-semibold text-white mb-3">{platform.name}</h3>
+              <p className="text-slate-400 leading-7">{platform.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center justify-center rounded-full bg-cyan-500 px-8 py-4 text-sm font-semibold text-slate-950 shadow-xl shadow-cyan-500/20 transition hover:bg-cyan-400"
+          >
+            Explore Software Solutions <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Solutions Spotlight */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <p className="text-sm uppercase tracking-[0.3em] text-amber-300">Integrated Solutions</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-white">Launch connected systems with clarity.</h2>
+          <p className="mt-4 text-slate-400 max-w-2xl mx-auto">A modern portfolio of connected solutions built for usability, visibility, and long-term growth.</p>
+        </motion.div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="rounded-[32px] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20"
+          >
+            <h3 className="text-2xl font-semibold text-white mb-4">Productized Solutions</h3>
+            <p className="text-slate-400 leading-7 mb-6">From vending and water systems to energy and automation, every product is backed by intuitive software and hardware that work seamlessly together.</p>
+            <ul className="space-y-3 text-slate-300">
+              <li>• Smart vending ecosystems</li>
+              <li>• Solar and energy automation</li>
+              <li>• Connected workplace systems</li>
+            </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.08 }}
+            viewport={{ once: true }}
+            className="rounded-[32px] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20"
+          >
+            <h3 className="text-2xl font-semibold text-white mb-4">Future-Ready Roadmaps</h3>
+            <p className="text-slate-400 leading-7 mb-6">Designed for rapid upgrades, connected expansion, and secure scaling across new markets.</p>
+            <ul className="space-y-3 text-slate-300">
+              <li>• Predictive analytics</li>
+              <li>• Secure connectivity</li>
+              <li>• Modular platform architecture</li>
+            </ul>
+          </motion.div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/solutions"
+            className="inline-flex items-center justify-center rounded-full bg-amber-400 px-8 py-4 text-sm font-semibold text-slate-950 shadow-xl shadow-amber-500/20 transition hover:bg-amber-300"
+          >
+            View All Solutions <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Consultancy Spotlight */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-slate-950/85 rounded-[40px] border border-white/10 shadow-2xl shadow-black/20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <p className="text-sm uppercase tracking-[0.3em] text-amber-300">Consultancy</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-white">Expert guidance for every stage.</h2>
+          <p className="mt-4 text-slate-400 max-w-2xl mx-auto">Strategy, design, and execution support that helps digital products launch faster and grow stronger.</p>
+        </motion.div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="rounded-3xl border border-white/10 bg-slate-900/80 p-8 shadow-lg shadow-black/20"
+          >
+            <h3 className="text-xl font-semibold text-white mb-4">Website Strategy</h3>
+            <p className="text-slate-400 leading-7">Design-first web experiences built for clarity, speed, and conversion.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.08 }}
+            viewport={{ once: true }}
+            className="rounded-3xl border border-white/10 bg-slate-900/80 p-8 shadow-lg shadow-black/20"
+          >
+            <h3 className="text-xl font-semibold text-white mb-4">Hardware Roadmaps</h3>
+            <p className="text-slate-400 leading-7">From prototypes to mass production, we help shape hardware that scales.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.16 }}
+            viewport={{ once: true }}
+            className="rounded-3xl border border-white/10 bg-slate-900/80 p-8 shadow-lg shadow-black/20"
+          >
+            <h3 className="text-xl font-semibold text-white mb-4">Software Architecture</h3>
+            <p className="text-slate-400 leading-7">Robust system design that keeps your product secure, maintainable, and ready to evolve.</p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Learning & Growth */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">Learning & Growth</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-white">Build skills while building solutions.</h2>
+          <p className="mt-4 text-slate-400 max-w-2xl mx-auto">Hands-on mentorship and practical programs that help people learn real-world product-building skills.</p>
+        </motion.div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="rounded-[32px] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20"
+          >
             <h3 className="text-2xl font-semibold text-white mb-4">Internship Programs</h3>
-            <p className="text-white mb-4">
-              Gain real-world experience in hardware design, software development, and IoT solutions.
-            </p>
-            <ul className="space-y-2 text-white">
-              <li>• Hardware Prototyping Internships</li>
-              <li>• IoT Development Programs</li>
-              <li>• Software Engineering Internships</li>
-              <li>• Research and Innovation Projects</li>
+            <p className="text-slate-400 leading-7 mb-6">Gain practical exposure in embedded systems, web apps, and IoT deployments.</p>
+            <ul className="space-y-3 text-slate-300">
+              <li>• Hardware prototyping and testing</li>
+              <li>• Software development sprints</li>
+              <li>• IoT deployment workshops</li>
             </ul>
-          </div>
-          <div>
-            <h3 className="text-2xl font-semibold text-white mb-4">Tech Learning Initiatives</h3>
-            <p className="text-white mb-4">
-              Comprehensive training programs to build industry-ready skills.
-            </p>
-            <ul className="space-y-2 text-white">
-              <li>• Embedded Systems Training</li>
-              <li>• IoT and Sensor Technologies</li>
-              <li>• Cloud Computing and AI</li>
-              <li>• Modern Web Development</li>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.08 }}
+            viewport={{ once: true }}
+            className="rounded-[32px] border border-white/10 bg-slate-900/80 p-8 shadow-2xl shadow-black/20"
+          >
+            <h3 className="text-2xl font-semibold text-white mb-4">Tech Initiatives</h3>
+            <p className="text-slate-400 leading-7 mb-6">Training programs and practical learning paths that build confidence for modern technology careers.</p>
+            <ul className="space-y-3 text-slate-300">
+              <li>• Embedded systems training</li>
+              <li>• IoT and sensor technologies</li>
+              <li>• Cloud & AI fundamentals</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </section>
 
